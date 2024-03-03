@@ -1,9 +1,9 @@
 package com.priyansu.learnspringframework.game;
 
 public class GameRunner {
-	MarioGame game;
+	private IGamingConsole game;
 	
-	public GameRunner(MarioGame game) {
+	public GameRunner(IGamingConsole game) {
 		this.game = game;
 	}
 
@@ -15,5 +15,15 @@ public class GameRunner {
 		game.left();
 		game.right();
 	}
+
+//	public SuperGame getGame() {
+//		return game;
+//	}
+//
+//	public void setGame(SuperGame game) {
+//		this.game = game;
+//	}
+//	
+	
 
 }

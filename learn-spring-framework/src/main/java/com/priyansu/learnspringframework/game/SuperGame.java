@@ -1,13 +1,13 @@
 package com.priyansu.learnspringframework.game;
 
-public class MarioGame implements IGamingConsole {
-	
+public class SuperGame implements IGamingConsole {
+
 	public void up() {
-		System.out.println("Jump");
+		System.out.println("Up");
 	}
 	
 	public void down() {
-		System.out.println("Go into a hole");
+		System.out.println("See Down");
 	}
 	
 	public void left() {
@@ -15,6 +15,7 @@ public class MarioGame implements IGamingConsole {
 	}
 	
 	public void right() {
-		System.out.println("Accelerate");
+		System.out.println("Shoot a Bullet");
 	}
+
 }
