@@ -2,7 +2,9 @@ package com.priyansu.learnspringframework;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
+/**
+ * @author Priyansu Sahoo
+ */
 record Person (String name, int age) {};
 record Address (String firstLine, String city) {};
 
@@ -19,7 +21,7 @@ public class HelloWorldConfiguration {
 		return 22;
 	}
 	
-	@Bean 
+	@Bean(name = "person1")
 	public Person person() {
 		return new Person("Thanos", 21);
 	}
