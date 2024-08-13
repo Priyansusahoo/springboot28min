@@ -26,6 +26,11 @@ public class HelloWorldConfiguration {
 		return new Person("Thanos", 21);
 	}
 	
+	@Bean 
+	public Person person2MethodCall() {
+		return new Person(name(), age());
+	}
+	
 	@Bean(name="address2")
 	public Address address() {
 		return new Address("Old Town", "Bhubaneswar");
